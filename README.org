@@ -1,0 +1,20 @@
+# exercises-4clojure
+
+FIXME: write description
+
+## Usage
+
+These are solutions for 
+
+## Environment 
+
+This is also a review of the Swank environment under Emacs 23. 
+
+- Install a current package.el
+- 
+
+## License
+
+Copyright (C) 2011 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
