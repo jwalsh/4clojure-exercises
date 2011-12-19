@@ -11,13 +11,15 @@
 
 
 ;; 34
-;; Write a function which creates a list of all integers in a given range.
+;; Write a function which creates a list of all integers in a given
+;; range.
 (defn implement-range-solution [b e]
   (range b e))
 
 
 ;; 27
-;; Write a function which returns true if the given sequence is a palindrome.
+;; Write a function which returns true if the given sequence is a
+;; palindrome.
 (defn palindrome-detector-solution [s]
   (= (seq s) (reverse s)))
 
@@ -35,13 +37,15 @@
 
 
 ;; 22
-;; Write a function which returns the total number of elements in a sequence.
+;; Write a function which returns the total number of elements in a
+;; sequence.
 (defn count-a-sequence-solution [s]
   (reduce + (map (fn [x] (+ 1)) s)))
 
 
 ;; 38
-;; Write a function which takes a variable number of parameters and returns the maximum value.
+;; Write a function which takes a variable number of parameters and
+;; returns the maximum value.
 (defn maximum-value-solution [m & r]
   (reduce max m r))
 
