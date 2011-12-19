@@ -10,8 +10,8 @@
 
 ;; 34
 ;; Write a function which creates a list of all integers in a given range.
-(defn implement-range-solution [s e]
-  (range s e))
+(defn implement-range-solution [b e]
+  (range b e))
 
 ;; 27
 ;; Write a function which returns true if the given sequence is a palindrome.
