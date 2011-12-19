@@ -10,10 +10,15 @@
 
 ;; 34
 ;; Write a function which creates a list of all integers in a given range.
-(defn implement-range-solution [s e] ; Update args as needed!
+(defn implement-range-solution [s e]
   (range s e))
 
 ;; 27
 ;; Write a function which returns true if the given sequence is a palindrome.
-(defn palindrome-detector-solution [l] ; Update args as needed!
-  (= (seq l) (reverse l)))
+(defn palindrome-detector-solution [s]
+  (= (seq s) (reverse s)))
+
+;; 32
+;; Write a function which duplicates each element of a sequence.
+(defn duplicate-a-sequence-solution [s]
+  (mapcat #(repeat 2 %) s))
