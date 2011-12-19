@@ -10,3 +10,9 @@
 (is (= (nth-element-solution [1 2 3 4] 1) 2) " (= (nth-element-solution [1 2 3 4] 1) 2) " )
 (is (= (nth-element-solution '([1 2] [3 4] [5 6]) 2) [5 6]) " (= (nth-element-solution '([1 2] [3 4] [5 6]) 2) [5 6]) " )
 )
+
+(deftest can-penultimate-element
+(is (= (penultimate-element-solution (list 1 2 3 4 5)) 4) " (= (penultimate-element-solution (list 1 2 3 4 5)) 4) " )
+(is (= (penultimate-element-solution ["a" "b" "c"]) "b") " (= (penultimate-element-solution [\"a\" \"b\" \"c\"]) \"b\") " )
+(is (= (penultimate-element-solution [[1 2] [3 4]]) [1 2]) " (= (penultimate-element-solution [[1 2] [3 4]]) [1 2]) " )
+)

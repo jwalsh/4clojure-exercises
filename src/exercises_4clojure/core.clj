@@ -1,5 +1,11 @@
 (ns exercises-4clojure.core)
 
-(defn nth-element-solution [seq i]
-  (first (drop i seq))
+; 21
+(defn nth-element-solution [l n]
+  (first (drop n l))
   )
+
+; 20
+(defn penultimate-element-solution [l] 
+  (second (reverse l))
+)
