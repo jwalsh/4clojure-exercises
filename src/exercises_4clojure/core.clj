@@ -61,5 +61,5 @@
 ;; Write a function which takes a string and returns a new string
 ;; containing only the capital letters.
 (defn get-the-caps-solution [s]
-  (apply str
+  (reduce str
          (re-seq #"[A-Z]" s)))
