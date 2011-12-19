@@ -72,3 +72,4 @@
 (is (empty? (get-the-caps-solution "nothing")) " (empty? (get-the-caps-solution \"nothing\")) " )
 (is (= (get-the-caps-solution "$#A(*&987Zf") "AZ") " (= (get-the-caps-solution \"$#A(*&987Zf\") \"AZ\") " )
 )
+

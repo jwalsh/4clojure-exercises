@@ -63,3 +63,4 @@
 (defn get-the-caps-solution [s]
   (reduce str
          (re-seq #"[A-Z]" s)))
+
