@@ -10,7 +10,7 @@
   (second (reverse l)))
 
 
-;; 34
+;; TODO 34
 ;; Write a function which creates a list of all integers in a given
 ;; range.
 (defn implement-range-solution [b e]
@@ -64,3 +64,8 @@
   (reduce str
          (re-seq #"[A-Z]" s)))
 
+
+;; TODO 28
+;; Write a function which flattens a sequence.
+(defn flatten-a-sequence-solution [s]
+  (flatten s))

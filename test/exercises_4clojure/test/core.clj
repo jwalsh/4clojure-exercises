@@ -73,3 +73,9 @@
 (is (= (get-the-caps-solution "$#A(*&987Zf") "AZ") " (= (get-the-caps-solution \"$#A(*&987Zf\") \"AZ\") " )
 )
 
+
+(deftest can-flatten-a-sequence
+(is (= (flatten-a-sequence-solution '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6)) " (= (flatten-a-sequence-solution '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6)) " )
+(is (= (flatten-a-sequence-solution ["a" ["b"] "c"]) '("a" "b" "c")) " (= (flatten-a-sequence-solution [\"a\" [\"b\"] \"c\"]) '(\"a\" \"b\" \"c\")) " )
+(is (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " )
+)
