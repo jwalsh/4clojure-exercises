@@ -22,3 +22,8 @@
 ;; Write a function which duplicates each element of a sequence.
 (defn duplicate-a-sequence-solution [s]
   (mapcat #(repeat 2 %) s))
+;; 42
+;; Write a function which calculates factorials.
+(defn factorial-fun-solution [x]
+  (apply * (for [x (range 1 (inc x))]
+             x)))
