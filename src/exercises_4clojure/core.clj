@@ -45,6 +45,9 @@
 (defn maximum-value-solution [m & r]
   (reduce max m r))
 
-(defn replicate-a-sequence-solution [] ; Update args as needed!
-nil
-)
+
+;; 33
+;; Write a function which replicates each element of a sequence a
+;; variable number of times.
+(defn replicate-a-sequence-solution [s x]
+  (mapcat #(repeat x %) s))
