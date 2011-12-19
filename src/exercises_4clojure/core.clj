@@ -55,3 +55,10 @@
 ;; variable number of times.
 (defn replicate-a-sequence-solution [s x]
   (mapcat #(repeat x %) s))
+
+
+;; 29
+;; Write a function which takes a string and returns a new string
+;; containing only the capital letters.
+(defn get-the-caps-solution [s]
+  (apply str (filter #(Character/isUpperCase %) s)))
