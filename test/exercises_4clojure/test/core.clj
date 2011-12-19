@@ -58,3 +58,11 @@
 (is (= (maximum-value-solution 30 20) 30) " (= (maximum-value-solution 30 20) 30) " )
 (is (= (maximum-value-solution 45 67 11) 67) " (= (maximum-value-solution 45 67 11) 67) " )
 )
+
+(deftest can-replicate-a-sequence
+(is (= (replicate-a-sequence-solution [1 2 3] 2) '(1 1 2 2 3 3)) " (= (replicate-a-sequence-solution [1 2 3] 2) '(1 1 2 2 3 3)) " )
+(is (= (replicate-a-sequence-solution [:a :b] 4) '(:a :a :a :a :b :b :b :b)) " (= (replicate-a-sequence-solution [:a :b] 4) '(:a :a :a :a :b :b :b :b)) " )
+(is (= (replicate-a-sequence-solution [4 5 6] 1) '(4 5 6)) " (= (replicate-a-sequence-solution [4 5 6] 1) '(4 5 6)) " )
+(is (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " )
+(is (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " )
+)
