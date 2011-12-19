@@ -79,3 +79,10 @@
 (is (= (flatten-a-sequence-solution ["a" ["b"] "c"]) '("a" "b" "c")) " (= (flatten-a-sequence-solution [\"a\" [\"b\"] \"c\"]) '(\"a\" \"b\" \"c\")) " )
 (is (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " )
 )
+
+(deftest can-interleave-two-seqs
+(is (= (interleave-two-seqs-solution [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)) " (= (interleave-two-seqs-solution [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)) " )
+(is (= (interleave-two-seqs-solution [1 2] [3 4 5 6]) '(1 3 2 4)) " (= (interleave-two-seqs-solution [1 2] [3 4 5 6]) '(1 3 2 4)) " )
+(is (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " )
+(is (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " )
+)
