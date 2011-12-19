@@ -44,3 +44,17 @@
 (is (= (factorial-fun-solution 5) 120) " (= (factorial-fun-solution 5) 120) " )
 (is (= (factorial-fun-solution 8) 40320) " (= (factorial-fun-solution 8) 40320) " )
 )
+
+(deftest can-count-a-sequence
+(is (= (count-a-sequence-solution '(1 2 3 3 1)) 5) " (= (count-a-sequence-solution '(1 2 3 3 1)) 5) " )
+(is (= (count-a-sequence-solution "Hello World") 11) " (= (count-a-sequence-solution \"Hello World\") 11) " )
+(is (= (count-a-sequence-solution [[1 2] [3 4] [5 6]]) 3) " (= (count-a-sequence-solution [[1 2] [3 4] [5 6]]) 3) " )
+(is (= (count-a-sequence-solution '(13)) 1) " (= (count-a-sequence-solution '(13)) 1) " )
+(is (= (count-a-sequence-solution '(:a :b :c)) 3) " (= (count-a-sequence-solution '(:a :b :c)) 3) " )
+)
+
+(deftest can-maximum-value
+(is (= (maximum-value-solution 1 8 3 4) 8) " (= (maximum-value-solution 1 8 3 4) 8) " )
+(is (= (maximum-value-solution 30 20) 30) " (= (maximum-value-solution 30 20) 30) " )
+(is (= (maximum-value-solution 45 67 11) 67) " (= (maximum-value-solution 45 67 11) 67) " )
+)
