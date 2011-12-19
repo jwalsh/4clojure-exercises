@@ -77,3 +77,9 @@
 ;; etc.
 (defn interleave-two-seqs-solution [s1 s2] ; Update args as needed!
   (interleave s1 s2))
+
+;; TODO 40
+;; Write a function which separates the items of a sequence by an
+;; arbitrary value.
+(defn interpose-a-seq-solution [x s] ; Update args as needed!
+  (interpose x s))

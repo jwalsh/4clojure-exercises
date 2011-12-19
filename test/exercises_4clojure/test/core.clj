@@ -86,3 +86,9 @@
 (is (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " )
 (is (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " )
 )
+
+(deftest can-interpose-a-seq
+(is (= (interpose-a-seq-solution 0 [1 2 3]) [1 0 2 0 3]) " (= (interpose-a-seq-solution 0 [1 2 3]) [1 0 2 0 3]) " )
+(is (= (apply str (interpose-a-seq-solution ", " ["one" "two" "three"])) "one, two, three") " (= (apply str (interpose-a-seq-solution \", \" [\"one\" \"two\" \"three\"])) \"one, two, three\") " )
+(is (= (interpose-a-seq-solution :z [:a :b :c :d]) [:a :z :b :z :c :z :d]) " (= (interpose-a-seq-solution :z [:a :b :c :d]) [:a :z :b :z :c :z :d]) " )
+)
