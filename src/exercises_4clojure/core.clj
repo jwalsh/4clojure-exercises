@@ -31,5 +31,4 @@
 ;; 42
 ;; Write a function which calculates factorials.
 (defn factorial-fun-solution [x]
-  (apply * (for [x (range 1 (inc x))]
-             x)))
+  (apply * (range 1 (inc x))))
