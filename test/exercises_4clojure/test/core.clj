@@ -66,3 +66,9 @@
 (is (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " )
 (is (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " )
 )
+
+(deftest can-get-the-caps
+(is (= (get-the-caps-solution "HeLlO, WoRlD!") "HLOWRD") " (= (get-the-caps-solution \"HeLlO, WoRlD!\") \"HLOWRD\") " )
+(is (empty? (get-the-caps-solution "nothing")) " (empty? (get-the-caps-solution \"nothing\")) " )
+(is (= (get-the-caps-solution "$#A(*&987Zf") "AZ") " (= (get-the-caps-solution \"$#A(*&987Zf\") \"AZ\") " )
+)
