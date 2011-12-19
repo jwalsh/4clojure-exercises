@@ -31,11 +31,16 @@
 ;; 42
 ;; Write a function which calculates factorials.
 (defn factorial-fun-solution [x]
-  (apply * (range 1 (inc x))))
+  (reduce * (range 1 (inc x))))
+
 
 ;; 22
 ;; Write a function which returns the total number of elements in a sequence.
 (defn count-a-sequence-solution [s]
-  (apply + (map (fn [x] (+ 1)) s)))
+  (reduce + (map (fn [x] (+ 1)) s)))
 
 
+;; 38
+;; Write a function which takes a variable number of parameters and returns the maximum value.
+(defn maximum-value-solution [m & r]
+  (reduce max m r))
