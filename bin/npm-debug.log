@@ -1,0 +1,37 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/home/jaw/usr/local/bin/npm',
+verbose cli   'install',
+verbose cli   'query' ]
+info using npm@1.0.106
+info using node@v0.5.0-pre
+verbose config file /home/jaw/.npmrc
+verbose config file /home/jaw/usr/local/etc/npmrc
+verbose config file /home/jaw/usr/local/lib/node_modules/npm/npmrc
+verbose into /home/jaw/sandbox/4clojure-exercises/bin [ 'query' ]
+verbose cache add query
+verbose cache add [ 'query', null ]
+silly cache add: name, spec, args [ undefined, 'query', [ 'query', null ] ]
+verbose parsed url { href: 'query', pathname: 'query' }
+info addNamed [ 'query', '' ]
+verbose addNamed [ null, '' ]
+verbose GET query
+verbose raw, before any munging query
+verbose url resolving [ 'https://registry.npmjs.org/', './query' ]
+verbose url resolved https://registry.npmjs.org/query
+ERR! Error: socket hang up
+ERR!     at CleartextStream.<anonymous> (http.js:1245:45)
+ERR!     at CleartextStream.emit (events.js:39:17)
+ERR!     at Array.1 (tls.js:566:22)
+ERR!     at EventEmitter._tickCallback (node.js:108:26)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 2.6.38.8-2-vs2.3.0.37-rc17-blkio
+ERR! command "node" "/home/jaw/usr/local/bin/npm" "install" "query"
+ERR! cwd /home/jaw/sandbox/4clojure-exercises/bin
+ERR! node -v v0.5.0-pre
+ERR! npm -v 1.0.106
+verbose exit [ 1, true ]

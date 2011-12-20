@@ -1,0 +1,135 @@
+1, This is a clojure form. Enter a value which will make the form evaluate to true. Don't over think it! If you are confused, see the [11]getting started page. Hint: true is equal to true.
+2, If you are not familiar with [11]polish notation, simple arithmetic might seem confusing.
+3, Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
+4, Lists can be constructed with either a function or a quoted form.
+5, When operating on a list, the conj function will return a new list with one or more items "added" to the front.
+6, Vectors can be constructed several ways. You can compare them with lists.
+7, When operating on a Vector, the conj function will return a new vector with one or more items "added" to the end.
+8, Sets are collections of unique values.
+9, When operating on a set, the conj function returns a new set with one or more keys "added".
+10, Maps store key-value pairs. Both maps and keywords can be used as lookup functions. Commas can be used to make maps more readable, but they are not required.
+11, When operating on a map, the conj function returns a new map with one or more key-value pairs "added".
+12, All Clojure collections support sequencing. You can operate on sequences with functions like first, second, and last.
+13, The rest function will return all the items of a sequence except the first.
+14, Clojure has many different ways to create functions.
+15, Write a function which doubles a number.
+16, Write a function which returns a personalized greeting.
+17, The map function takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function
+18, The filter function takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.
+19, Write a function which returns the last element in a sequence.
+20, Write a function which returns the second to last element from a sequence.
+21, Write a function which returns the Nth element from a sequence.
+22, Write a function which returns the total number of elements in a sequence.
+23, Write a function which reverses a sequence.
+24, Write a function which returns the sum of a sequence of numbers.
+25, Write a function which returns only the odd numbers from a sequence.
+26, Write a function which returns the first X fibonacci numbers.
+27, Write a function which returns true if the given sequence is a palindrome.
+28, Write a function which flattens a sequence.
+29, Write a function which takes a string and returns a new string containing only the capital letters.
+30, Write a function which removes consecutive duplicates from a sequence.
+31, Write a function which packs consecutive duplicates into sub-lists.
+32, Write a function which duplicates each element of a sequence.
+33, Write a function which replicates each element of a sequence a variable number of times.
+34, Write a function which creates a list of all integers in a given range.
+35, Clojure lets you give local names to values using the special let-form.
+36, Can you bind x, y, and z so that these are all true?
+37, Regex patterns are supported with a special reader macro.
+38, Write a function which takes a variable number of parameters and returns the maximum value.
+39, Write a function which takes two sequences and returns the first item from each, then the second item from each, then the third, etc.
+40, Write a function which separates the items of a sequence by an arbitrary value.
+41, Write a function which drops every Nth item from a sequence.
+42, Write a function which calculates factorials.
+43, Write a function which reverses the interleave process into x number of subsequences.
+44, Write a function which can rotate a sequence in either direction.
+45, The iterate function can be used to produce an infinite lazy sequence.
+46, Write a higher-order function which flips the order of the arguments of an input function.
+47, The contains? function checks if a KEY is present in a given collection. This often leads beginner clojurians to use it incorrectly with numerically indexed collections like vectors and
+48, The some function takes a predicate function and a collection. It returns the first logical true value of (predicate x) where x is an item in the collection.
+49, Write a function which will split a sequence into two parts.
+50, Write a function which takes a sequence consisting of items with different types and splits them up into a set of homogeneous sub-sequences. The internal order of each sub-sequence should be
+51, Here is an example of some more sophisticated destructuring.
+52, Let bindings and function parameter lists support destructuring.
+53, Given a vector of integers, find the longest consecutive sub-sequence of increasing numbers. If two sub-sequences have the same length, use the one that occurs first. An increasing
+54, Write a function which returns a sequence of lists of x items each. Lists of less than x items should not be returned.
+55, Write a function which returns a map containing the number of occurences of each distinct item in a sequence.
+56, Write a function which removes the duplicates from a sequence. Order of the items must be maintained.
+57, A recursive function is a function which calls itself. This is one of the fundamental techniques used in functional programming.
+58, Write a function which allows you to create function compositions. The parameter list should take a variable number of functions, and create a function applies them from right-to-left.
+59, Take a set of functions and return a new function that takes a variable number of arguments and returns a sequence containing the result of applying each function left-to-right to the
+60, Write a function which behaves like reduce, but returns each intermediate value of the reduction. Your function must accept either two or three arguments, and the return sequence must be
+61, Write a function which takes a vector of keys and a vector of values and constructs a map from them.
+62, Given a side-effect free function f and an initial value x write a function which returns an infinite lazy sequence of x, (f x), (f (f x)), (f (f (f x))), etc.
+63, Given a function f and a sequence s, write a function which returns a map. The keys should be the values of f applied to each item in s. The value at each key should be a vector of
+64, [11]Reduce takes a 2 argument function and an optional starting value. It then applies the function to the first 2 items in the sequence (or the starting value and the first element of the
+65, Clojure has many sequence types, which act in subtly different ways. The core functions typically convert them into a uniform "sequence" type and work with them that way, but it can be
+66, Given two integers, write a function which returns the greatest common divisor.
+67, Write a function which returns the first x number of prime numbers.
+68, Clojure only has one non-stack-consuming looping construct: recur. Either a function or a loop can be used as the recursion point. Either way, recur rebinds the bindings of the recursion
+69, Write a function which takes a function f and a variable number of maps. Your function should return a map that consists of the rest of the maps conj-ed onto the first. If a key occurs in
+70, Write a function that splits a sentence up into a sorted list of words. Capitalization should not affect sort order and punctuation should be ignored.
+71, The -> macro threads an expression x through a variable number of forms. First, x is inserted as the second item in the first form, making a list of it if it is not a list already. Then the
+72, The ->> macro threads an expression x through a variable number of forms. First, x is inserted as the last item in the first form, making a list of it if it is not a list already. Then the
+73, A [11]tic-tac-toe board is represented by a two dimensional vector. X is represented by :x, O is represented by :o, and empty is represented by :e. A player wins by placing three Xs or three
+74, Given a string of comma separated integers, write a function which returns a new comma separated string that only contains the numbers which are perfect squares.
+75, Two numbers are coprime if their greatest common divisor equals 1. Euler's totient function f(x) is defined as the number of positive integers less than x which are coprime to x. The special
+76, The trampoline function takes a function f and a variable number of parameters. Trampoline calls f with any parameters that were supplied. If f returns a function, trampoline calls that
+77, Write a function which finds all the anagrams in a vector of words. A word x is an anagram of word y if all the letters in x can be rearranged in a different order to form y. Your function
+78, Reimplement the function described in [11]"Intro to Trampoline".
+79, Write a function which calculates the sum of the minimal path through a triangle. The triangle is represented as a collection of vectors. The path should start at the top of the triangle and
+80, A number is "perfect" if the sum of its divisors equal the number itself. 6 is a perfect number because 1+2+3=6. Write a function which returns true for perfect numbers and false otherwise.
+81, Write a function which returns the intersection of two sets. The intersection is the sub-set of items that each set has in common.
+82, A word chain consists of a set of words ordered so that each word differs by only one letter from the words directly before and after it. The one letter difference can be either an insertion,
+83, Write a function which takes a variable number of booleans. Your function should return true if some of the parameters are true, but not all of the parameters are true. Otherwise your
+84, Write a function which generates the [11]transitive closure of a [12]binary relation. The relation will be represented as a set of 2 item vectors.
+85, Write a function which generates the [11]power set of a given set. The power set of a set x is the set of all subsets of x, including the empty set and x itself.
+86, Happy numbers are positive integers that follow a particular formula: take each individual digit, square it, and then sum the squares to get a new number. Repeat with the new number and
+87,
+88, Write a function which returns the symmetric difference of two sets. The symmetric difference is the set of items belonging to one but not both of the two sets.
+89, Starting with a graph you must write a function that returns true if it is possible to make a tour of the graph in which every edge is visited exactly once.
+90, Write a function which calculates the [11]Cartesian product of two sets.
+91, Given a graph, determine whether the graph is connected. A connected graph is such that a path exists between any two given nodes.
+92, Roman numerals are easy to recognize, but not everyone knows all the rules necessary to work with them. Write a function to parse a Roman-numeral string and return the number it represents.
+93, Write a function which flattens any nested combination of sequential things (lists, vectors, etc.), but maintains the lowest level sequential items. The result should be a sequence of
+94, The [11]game of life is a cellular automaton devised by mathematician John Conway.
+95, Write a predicate which checks whether or not a given sequence represents a [11]binary tree. Each node in the tree must have a value, a left child, and a right child.
+96, Let us define a binary tree as "symmetric" if the left half of the tree is the mirror image of the right half of the tree. Write a predicate to determine whether or not a given binary tree is
+97, [11]Pascal's triangle is a triangle of numbers computed using the following rules:
+98, A function f defined on a domain D induces an [11]equivalence relation on D, as follows: a is equivalent to b with respect to f if and only if (f a) is equal to (f b). Write a function with
+99, Write a function which multiplies two numbers and returns the result as a sequence of its digits.
+100, Write a function which calculates the [11]least common multiple. Your function should accept a variable number of positive integers or ratios.
+101, Given two sequences x and y, calculate the [11]Levenshtein distance of x and y, i. e. the minimum number of edits needed to transform x into y. The allowed edits are:
+102, When working with java, you often need to create an object with fieldsLikeThis, but you'd rather work with a hashmap that has :keys-like-this until it's time to convert. Write a function
+103, Given a sequence S consisting of n elements generate all [11]k-combinations of S, i. e. generate all possible sets consisting of k distinct elements taken from S. The number of k-combinations
+104, This is the inverse of [11]Problem 92, but much easier. Given an integer smaller than 4000, return the corresponding roman numeral in uppercase, adhering to the [12]subtractive principle.
+105, Given an input sequence of keywords and numbers, create a map such that each key in the map is a keyword, and the value is a sequence of all the numbers (if any) between it and the next
+106, Given a pair of numbers, the start and end point, find a path between the two using only three possible operations:
+107,
+108,
+109,
+110,
+111, Write a function that takes a string and a partially-filled crossword puzzle board, and determines if the input string can be legally placed onto the board. The crossword puzzle board
+112, Create a function which takes an integer and a nested collection of integers as arguments. Analyze the elements of the input collection and return a sequence which maintains the nested
+113, Write a function that takes a variable number of integer arguments. If the output is coerced into a string, it should return a comma (and space) separated list of the inputs sorted smallest
+114,
+115, A balanced number is one whose component digits have the same sum on the left and right halves of the number. Write a function which accepts an integer n, and returns true iff n is balanced.
+116, A [11]balanced prime is a prime number which is also the mean of the primes directly before and after it in the sequence of valid primes. Create a function which takes an integer n, and
+117, A mad scientist with tenure has created an experiment tracking mice in a maze. Several mazes have been randomly generated, and you've been tasked with writing a program to determine the mazes
+118,
+119,
+120, Write a function which takes a collection of integers as an argument. Return the count of how many elements are smaller than the sum of their squared component digits. For example: 10 is
+121, Given a mathematical formula in prefix notation, return a function that calculates the value of the formula. The formula can contain nested calculations using the four basic mathematical
+122, Convert a binary number, provided in the form of a string, to its numerical value.
+123,
+124,
+125, Create a function of no arguments which returns a string that is an exact copy of the function itself.
+126, Enter a value which satisfies the following:
+127, Everyone loves triangles, and it's easy to understand why--they're so wonderfully symmetric (except scalenes, they suck).
+128,
+129,
+130, Every node of a tree is connected to each of its children as well as its parent. One can imagine grabbing one node of a tree and dragging it up to the root position, leaving all connections
+131, Given a variable number of sets of integers, create a function which returns true iff all of the sets have a non-empty subset with an equivalent summation.
+132, Write a function that takes a two-argument predicate, a value, and a collection; and returns a new collection where the value is inserted between every two items that satisfy the predicate.
+133,
+134, Write a function which, given a key and map, returns true [11]iff the map contains an entry with that key and its value is nil.
+135, Your friend Joe is always whining about Lisps using the prefix notation for math. Show him how you could easily write a function that does math using the infix notation. Is your favorite
