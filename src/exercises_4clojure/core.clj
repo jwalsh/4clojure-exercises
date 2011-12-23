@@ -42,6 +42,8 @@
 
 ;; 38
 ;; Write a function which takes a variable number of parameters and returns the maximum value.
-(defn maximum-value-solution [m & r]
-  (reduce max m r))
+(defn maximum-value-solution [& a]
+  (reduce max a))
+
+
 
