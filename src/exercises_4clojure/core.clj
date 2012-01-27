@@ -13,7 +13,10 @@
 ;; 34
 ;; Write a function which creates a list of all integers in a given
 ;; range.
-(defn implement-range-solution [b e]
+(defn
+ ^{:doc "Implement range with base functions"}
+ implement-range-solution [b e]
+ "Get a sequence of numbers starting with b and ending with e."
   (if  (= b e)
     nil
     (cons b (implement-range-solution (inc b) e))))
@@ -51,7 +54,7 @@
 (defn maximum-value-solution
   ([& r]
      (reduce #(if (> %2 %1) %2 %1) r)))
-
+ 
 
 ;; 33
 ;; Write a function which replicates each element of a sequence a
