@@ -10,11 +10,13 @@
   (second (reverse l)))
 
 
-;; TODO 34
+;; 34
 ;; Write a function which creates a list of all integers in a given
 ;; range.
 (defn implement-range-solution [b e]
-  (range b e))
+  (if  (= b e)
+    nil
+    (cons b (implement-range-solution (inc b) e))))
 
 
 ;; 27
