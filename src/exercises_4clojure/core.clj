@@ -49,9 +49,8 @@
 ;; Write a function which takes a variable number of parameters and
 ;; returns the maximum value.
 (defn maximum-value-solution
-  ([x y] (if (> x y) x y))
-  ([x y & r]
-     (reduce maximum-value-solution (maximum-value-solution x y) r)))
+  ([& r]
+     (reduce #(if (> %2 %1) %2 %1) r)))
 
 
 ;; 33
