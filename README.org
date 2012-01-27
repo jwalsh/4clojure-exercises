@@ -8,12 +8,14 @@ These are solutions for 4clojure.com .
 
 This is also a review of the Swank environment under Emacs 23. 
 
-- Install a current package.el
 - Install Leiningen  https://github.com/technomancy/leiningen
 - Install Swank Clojure https://github.com/technomancy/swank-clojure
+- Install package.el for Emacs 23
+- M-x package-install clojure-mode
 
-** Setup 
+** Validation
 
-- Run lein test
+- shell: lein test
+- Emacs: M-x clojure-jack-in
 
 
