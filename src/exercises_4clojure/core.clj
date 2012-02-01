@@ -98,3 +98,10 @@
 ;; value of n for use outside the scope in which it is defined.
 (defn simple-closures-solution [x]
   #(int (Math/pow % x)))
+
+
+;; 134
+;; Write a function which, given a key and map, returns true iff the
+;; map contains an entry with that key and its value is nil.
+(defn a-nil-key-solution [k m]
+ (and (contains? m k) (nil? (get m k))))
