@@ -75,14 +75,14 @@
 ;; Write a function which takes two sequences and returns the first
 ;; item from each, then the second item from each, then the third,
 ;; etc.
-(defn interleave-two-seqs-solution [s1 s2] ; Update args as needed!
+(defn interleave-two-seqs-solution [s1 s2]
   (interleave s1 s2))
 
 
 ;; TODO 40
 ;; Write a function which separates the items of a sequence by an
 ;; arbitrary value.
-(defn interpose-a-seq-solution [x s] ; Update args as needed!
+(defn interpose-a-seq-solution [x s]
   (interpose x s))
 
 
@@ -90,3 +90,11 @@
 ;; Write a function which calculates factorials.
 (defn factorial-fun-solution [x]
   (reduce * (range 1 (inc x))))
+
+
+;; 107
+;; Given a positive integer n, return a function (f x) which
+;; computes xn. Observe that the effect of this is to preserve the
+;; value of n for use outside the scope in which it is defined.
+(defn simple-closures-solution [x]
+  #(int (Math/pow % x)))
