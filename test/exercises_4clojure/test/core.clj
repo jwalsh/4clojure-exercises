@@ -58,3 +58,37 @@
 (is (= (maximum-value-solution 30 20) 30) " (= (maximum-value-solution 30 20) 30) " )
 (is (= (maximum-value-solution 45 67 11) 67) " (= (maximum-value-solution 45 67 11) 67) " )
 )
+
+(deftest can-replicate-a-sequence
+(is (= (replicate-a-sequence-solution [1 2 3] 2) '(1 1 2 2 3 3)) " (= (replicate-a-sequence-solution [1 2 3] 2) '(1 1 2 2 3 3)) " )
+(is (= (replicate-a-sequence-solution [:a :b] 4) '(:a :a :a :a :b :b :b :b)) " (= (replicate-a-sequence-solution [:a :b] 4) '(:a :a :a :a :b :b :b :b)) " )
+(is (= (replicate-a-sequence-solution [4 5 6] 1) '(4 5 6)) " (= (replicate-a-sequence-solution [4 5 6] 1) '(4 5 6)) " )
+(is (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " (= (replicate-a-sequence-solution [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4])) " )
+(is (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " (= (replicate-a-sequence-solution [44 33] 2) [44 44 33 33]) " )
+)
+
+(deftest can-get-the-caps
+(is (= (get-the-caps-solution "HeLlO, WoRlD!") "HLOWRD") " (= (get-the-caps-solution \"HeLlO, WoRlD!\") \"HLOWRD\") " )
+(is (empty? (get-the-caps-solution "nothing")) " (empty? (get-the-caps-solution \"nothing\")) " )
+(is (= (get-the-caps-solution "$#A(*&987Zf") "AZ") " (= (get-the-caps-solution \"$#A(*&987Zf\") \"AZ\") " )
+)
+
+
+(deftest can-flatten-a-sequence
+(is (= (flatten-a-sequence-solution '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6)) " (= (flatten-a-sequence-solution '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6)) " )
+(is (= (flatten-a-sequence-solution ["a" ["b"] "c"]) '("a" "b" "c")) " (= (flatten-a-sequence-solution [\"a\" [\"b\"] \"c\"]) '(\"a\" \"b\" \"c\")) " )
+(is (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " (= (flatten-a-sequence-solution '((((:a))))) '(:a)) " )
+)
+
+(deftest can-interleave-two-seqs
+(is (= (interleave-two-seqs-solution [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)) " (= (interleave-two-seqs-solution [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c)) " )
+(is (= (interleave-two-seqs-solution [1 2] [3 4 5 6]) '(1 3 2 4)) " (= (interleave-two-seqs-solution [1 2] [3 4 5 6]) '(1 3 2 4)) " )
+(is (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " (= (interleave-two-seqs-solution [1 2 3 4] [5]) [1 5]) " )
+(is (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " (= (interleave-two-seqs-solution [30 20] [25 15]) [30 25 20 15]) " )
+)
+
+(deftest can-interpose-a-seq
+(is (= (interpose-a-seq-solution 0 [1 2 3]) [1 0 2 0 3]) " (= (interpose-a-seq-solution 0 [1 2 3]) [1 0 2 0 3]) " )
+(is (= (apply str (interpose-a-seq-solution ", " ["one" "two" "three"])) "one, two, three") " (= (apply str (interpose-a-seq-solution \", \" [\"one\" \"two\" \"three\"])) \"one, two, three\") " )
+(is (= (interpose-a-seq-solution :z [:a :b :c :d]) [:a :z :b :z :c :z :d]) " (= (interpose-a-seq-solution :z [:a :b :c :d]) [:a :z :b :z :c :z :d]) " )
+)

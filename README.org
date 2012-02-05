@@ -1,20 +1,21 @@
-# exercises-4clojure
+* exercises-4clojure
 
-FIXME: write description
+** Usage
 
-## Usage
+These are solutions for 4clojure.com . 
 
-These are solutions for 
-
-## Environment 
+** Environment 
 
 This is also a review of the Swank environment under Emacs 23. 
 
-- Install a current package.el
-- 
+- Install Leiningen  https://github.com/technomancy/leiningen
+- Install Swank Clojure https://github.com/technomancy/swank-clojure
+- Install package.el for Emacs 23
+- M-x package-install clojure-mode
 
-## License
+** Validation
 
-Copyright (C) 2011 FIXME
+- shell: lein test
+- Emacs: M-x clojure-jack-in
 
-Distributed under the Eclipse Public License, the same as Clojure.
+
