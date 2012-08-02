@@ -69,7 +69,7 @@
 (defn maximum-value-solution
   ([& r]
      (reduce #(if (> %2 %1) %2 %1) r)))
- 
+
 
 ;; TODO 39
 ;; Write a function which takes two sequences and returns the first
